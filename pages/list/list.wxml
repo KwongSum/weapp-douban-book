@@ -1,0 +1,12 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+    <scroll-view class="wrapper-scroll" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="100">
+
+    <!--list-->
+    <import src="../component/item/item.wxml"/>
+    <template is="item" data="{{bookList: bookList}}"/>
+   
+        
+      
+    </scroll-view>
+</view>

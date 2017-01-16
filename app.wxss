@@ -1,0 +1,446 @@
+/**app.wxss**/
+page{
+    background: #f7f7f7;
+}
+.navigator-hover{
+    background-color: rgba(241, 241, 241, 1) !important;
+    opacity: 1;
+}
+
+/**index.wxss**/
+.wrapper-scroll {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    overflow:auto
+}
+
+.banner-box{
+    position: relative;
+    height: 400rpx
+}
+.banner-bg{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 400rpx;
+    background: #ffac2d    
+}
+.slide-image{
+     width: 100%;
+     height: 100%
+}
+.search-box{
+    position: absolute;
+    z-index: 2;
+    width: 690rpx;
+    height: 80rpx;
+    margin: 0 30rpx;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 246rpx;
+    border: 1rpx solid #c47a19;
+    box-shadow: 0 0 3rpx #c47a19;
+    border-radius: 12rpx;
+    background: #fff;
+      
+}
+.search-icon{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 10rpx 0 0 10rpx;
+    display: flex; 
+    justify-content: center;
+    align-items: center
+}
+.search-icon image{ 
+    width: 40rpx;
+    height: 40rpx;
+ 
+    
+}
+.search-input{
+    width: 480rpx;
+    height: 80rpx;
+    color: #989898;
+    font-size: 30rpx;
+    border: none;
+    padding-right: 10rpx;
+    line-height: 80rpx
+}
+.search-btn{ 
+    width: 120rpx;
+    height: 80rpx;
+    background: #2d2d2d;
+    color: white;
+    font-size: 30rpx;
+    border-color: #2d2d2d;
+    border-radius: 0 10rpx 10rpx 0;
+    line-height: 80rpx;
+    text-align: center
+ 
+}
+/**感兴趣**/
+.wrapper-content{
+    background: #fff;
+    padding: 30rpx;
+   
+}
+.ibox-top{
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: space-between
+}
+.ibox-title{
+    font-size: 30rpx;
+    color: #2d2d2d;
+    text-overflow: ellipsis;
+}
+.ibox-refresh{
+     font-size: 30rpx;
+     color: #989898;
+     
+}
+.list-container{
+    padding: 20rpx 0  0;
+    width: 690rpx;
+    overflow: hidden;
+   
+}
+.list-container view::after{
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+.list-ui{
+    width: 732rpx; 
+}
+.list-ui .list-nav{
+    width:202rpx;
+    float: left;
+    margin-bottom: 50rpx;
+    margin-right: 42rpx;
+}
+.book-item{ width:202rpx;}
+.book-item-img{ 
+    width: 202rpx;
+    height: 282rpx;
+}
+.book-title{
+    font-size: 28rpx;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10rpx 0 6rpx;
+}
+.average-rating{
+    font-size: 26rpx;
+    color: #989898;
+}
+.star-img{
+    width: 130rpx;
+    height: 24rpx;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5rpx;
+    
+}
+/**分类**/
+.tags-box{
+    padding: 0 0 20rpx;
+
+}
+.tags-box .tags-nav{
+     display: inline-block;
+     margin-right: 24rpx;
+     margin-bottom: 24rpx;
+     background-color: #f5f5f5;
+     color: #989898;
+     border-radius: 8rpx;
+}
+.tags-box .tag{
+    display: inline-block;   
+    font-size: 32rpx;  
+    padding: 20rpx 30rpx;
+    
+}
+/**关于**/
+.about-title{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 690rpx;
+    margin: 90rpx auto 60rpx;
+}
+.about-h1{
+    font-size: 48rpx;
+    color: #2b2b2b
+}
+.about-version{
+    font-size: 24rpx;
+    color: #989898;
+    margin-top: 6rpx;
+}
+.ibox-title-small{
+    font-size: 30rpx;
+    color: #989898;
+    display: block;
+    padding: 20rpx 0;
+    text-overflow: ellipsis;
+}
+.ibox-content{
+    padding: 20rpx 0;
+    font-size: 32rpx;
+    color: #2d2d2d;
+    line-height: 60rpx;
+}
+.ibox-content view{
+    margin-bottom: 20rpx
+}
+.text-blue{ 
+    color: #0078fe;
+}
+/**列表**/
+.ibox-list{  
+    
+    padding: 30rpx;     
+}
+.ibox-list-nav{ 
+    background: #fff;
+    position: relative
+}
+.ibox-list-nav view::after{
+    clear:both;
+    content:'.';
+    display:block;
+    width: 0;
+    height: 0;
+    visibility:hidden;
+}
+.ibox-list-img{
+    width: 210rpx;
+    height: 280rpx;
+    float: left;
+}
+.ibox-list-infos{
+    width: 450rpx;  
+    float: right;
+}
+.ibox-list-author{
+    font-size: 28rpx;
+    color: #656565;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 38rpx;
+    margin-bottom: 6rpx;
+}
+.ibox-list-title{
+    font-size: 34rpx;
+    color: #2d2d2d;
+    display: block;
+    text-overflow: ellipsis;
+    margin-top: 4rpx;
+}
+.ibox-list-star{
+    margin:12rpx 0 14rpx;
+}
+.ibox-list-tags{
+  
+}
+
+.ibox-list-tags text{
+    position: relative;
+    font-size: 24rpx;
+    color: #ffac2d;
+    padding: 12rpx 16rpx;
+    display: inline-block;
+    margin-right: 14rpx;
+    margin-bottom: 10rpx;
+
+}
+
+.ibox-list-tags text::after {
+    content:" ";
+    width:200%;
+    height:200%;
+    position:absolute;
+    top:0;
+    left:0;
+    border:1px solid #ffac2d;
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    box-sizing:border-box;
+    border-radius:6px;
+
+}
+
+.ibox-list-summary{
+    font-size: 28rpx;
+    color: #656565;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    line-height: 38rpx
+}
+.widget-line {
+    content:" ";
+    position:absolute;
+    left:30rpx;
+    top:0;
+    right:30rpx;
+    height:1px; 
+    background-color:#F0F0F0;
+    -webkit-transform:scaleY(0.5);
+    transform:scaleY(0.5);
+
+}
+/**详情**/
+
+.detail-box  {
+    position: relative;
+    width: 100%;
+    height: 600rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.detail-box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 600rpx;
+    background-color: rgba(45, 45, 45, .3);
+}
+.detail-box-bg {
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 600rpx;
+    background-size: cover;
+    background-position: center;
+    filter: blur(30rpx);
+    transform: scale(1.2);
+}
+
+.detail-img{
+    z-index: 9999;
+    width: 354rpx;
+    height: 504rpx;
+    margin-top: 47rpx;
+    box-shadow: 0 0rpx 30rpx rgba(0, 0, 0, .3)
+}
+.detail-info{
+    background: #fff;
+    padding: 50rpx 30rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30rpx;
+}
+.detail-fl{
+    width:500rpx;
+}
+.detail-fr{
+    width:170rpx;
+}
+.detail-title{
+    font-size: 50rpx;
+    color: #2d2d2d;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+}
+.detail-text{
+    font-size: 28rpx;
+    color: #656565;
+    margin-bottom: 14rpx;
+
+}
+
+.detail-tags text{
+    position: relative;
+    font-size: 28rpx;
+    color: #ffac2d;
+    padding: 14rpx 18rpx;
+    display: inline-block;
+    margin-right: 16rpx;
+    margin-bottom: 14rpx;
+    margin-top: 20rpx;
+
+}
+.detail-tags text::after {
+    content:" ";
+    width:200%;
+    height:200%;
+    position:absolute;
+    top:0;
+    left:0;
+    border:1px solid #ffac2d;
+    -webkit-transform:scale(0.5);
+    transform:scale(0.5);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    box-sizing:border-box;
+    border-radius:6px;
+
+}
+.detail-star-box{
+    width: 167rpx;
+    height: 167rpx;
+    box-shadow: 0 0rpx 20rpx rgba(0, 0, 0, .2);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+.detail-star{
+    font-size: 38rpx;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 16rpx;
+}
+
+.detail-star-img{
+    width: 130rpx;
+    height: 24rpx;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+/*搜索*/
+.search-bg{
+    position: fixed;
+    height: 156rpx;
+    left:0;
+    top:0;
+    right:0;
+    z-index: 99;
+    background: #ffac2d;
+
+}

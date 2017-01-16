@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/sort/sort",
+    "pages/about/about",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light", 
+    "navigationBarBackgroundColor": "#ffac2d",
+    "navigationBarTitleText": "豆瓣读书小程序",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"false"
+  },
+   "tabBar": {
+    "color":"#989898",   
+    "selectedColor":"#2b2b2b", 
+    "backgroundColor":"#fff", 
+    "borderStyle":"black",  
+    "list": [{
+      "pagePath": "pages/index/index",  
+      "text": "首页",   
+      "iconPath":"images/nav_index.png",  
+      "selectedIconPath":"images/nav_index_on.png"  
+    }, {
+      "pagePath": "pages/sort/sort",
+      "text": "分类",
+      "iconPath":"images/nav_sort.png",
+      "selectedIconPath":"images/nav_sort_on.png"
+    }, {
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath":"images/nav_about.png",
+      "selectedIconPath":"images/nav_about_on.png"
+    }]
+  }
+
+}

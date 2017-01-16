@@ -1,0 +1,35 @@
+<!--
+你可能感兴趣
+-->
+<template name="Interested">
+  <view class="wrapper-content">
+    <view class="ibox-top">
+     <text class="ibox-title">您可能感兴趣</text>
+     <view class="ibox-refresh" bindtap="toRefresh">换一批</view>
+    </view>
+    <view class="list-container">
+     <view class="list-ui">
+             <block wx:for="{{bookList}}">
+                 <navigator class="list-nav"  hover-class="nav-hover" url="../detail/detail?id={{item.id}}">
+                     <view class="book-item">
+                         <image class="book-item-img" src="{{item.image}}"></image>
+                         <view class="book-item-infos">
+                             <view class="book-title">{{item.title}}</view>
+
+                             <view class="book-star-box">
+                                 <image  class="star-img " src="{{item.rating.block}}"></image>
+                                 <text class="average-rating">{{item.rating.average}}</text>
+                             </view>
+
+
+                         </view>
+                     </view>
+                 </navigator>
+             </block>
+
+
+        </view>
+    
+        </view>
+  </view>
+</template>

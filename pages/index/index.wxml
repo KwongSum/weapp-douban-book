@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+   
+    <scroll-view class="wrapper-scroll" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="100">
+        <!--banner-->
+        <view class="banner-box">
+        <!--搜索-->
+        <navigator url="../search/search" hover-class="className" class="search-box"> 
+        <view class="search-icon">
+        <image src="../../images/icon_search.png"></image>
+        </view> 
+         <!--<input class="search-input" placeholder="搜书名/作者/ISBN" />-->
+         <text class="search-input">搜书名/作者/ISBN</text>
+         <text class="search-btn">搜索</text>
+        </navigator>
+        <!--背景-->
+        <swiper class="banner-bg"  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                <image src="{{item}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+        </view>
+        <!--banner end-->
+
+        <!--list 这里纯属想用一下模板-->
+         <import src="../component/interested/interested.wxml"/>
+         <template is="Interested" data="{{bookList: bookList}}"/>
+      
+    </scroll-view>
+
+</view>

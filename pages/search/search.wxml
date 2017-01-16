@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+        <!--banner-->
+        <view class="search-bg" >
+            <!--搜索-->
+            <view class="search-box" style="top:38rpx">
+                <view class="search-icon">
+                    <image src="../../images/icon_search.png"></image>
+                </view>
+                <input class="search-input" bindinput="changeValue" placeholder="搜书名/作者/ISBN" value=""/>
+                <text class="search-btn" bindtap="toSearch">搜索</text>
+                
+            </view>
+
+        </view>
+        <!--banner end-->
+
+
+    <scroll-view class="wrapper-scroll" scroll-y="true"  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="100" style="margin-top: 156rpx;">
+
+    <!--list-->
+    <import src="../component/item/item.wxml"/>
+    <template is="item" data="{{bookList: bookList}}"/>
+
+    </scroll-view>
+
+</view>

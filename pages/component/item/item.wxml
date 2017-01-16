@@ -1,0 +1,28 @@
+
+<template name="item">
+    <block wx:for="{{bookList}}">
+        <navigator class="ibox-list-nav"  url="../detail/detail?id={{item.id}}">
+            <view class="ibox-list">
+                <image class="ibox-list-img" src="{{item.image}}"></image>
+                <view class="ibox-list-infos">
+                    <view class="ibox-list-title">{{item.title}}</view>
+                    <view class="ibox-list-star">
+                        <image  class="star-img " src="{{item.rating.block}}"></image>
+                        <text class="average-rating">{{item.rating.average}}</text>
+                    </view>
+                    <view class="ibox-list-tags">
+                        <!--<text wx:for="{{item.tags}}" wx:for-item="item"  >{{item.title}}</text>-->
+                        <text wx:if="{{item.tags[0].title}}">{{item.tags[0].title}}</text>
+                        <text wx:if="{{item.tags[1].title}}">{{item.tags[1].title}}</text>
+                        <text wx:if="{{item.tags[2].title}}">{{item.tags[2].title}}</text>
+                    </view>
+                    <view class="ibox-list-author">作者：{{item.author[0]}}</view>
+
+                    <view class="ibox-list-summary">{{item.summary}}</view>
+                </view>
+            </view>
+            <view class="widget-line"></view>
+        </navigator>
+    </block>
+
+</template>
