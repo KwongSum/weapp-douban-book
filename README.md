@@ -10,6 +10,9 @@
 4、作为一名小菜鸟，当前版本可能会有点low，但是后面会慢慢完善。<br>
 5、下个版本要完善的功能：评论、收藏、登录等。<br>
 
+#运行
+下载后删掉img文件夹和README.md文件再运行
+
 这个Demo纯属为新手练习<br>
 https://github.com/DriverUI/weapp-douban-book
 
