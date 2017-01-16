@@ -14,3 +14,6 @@
 https://github.com/DriverUI/weapp-douban-book
 
 ![img/preview.gif](img/preview.gif)
+
+真机截图
+![img/img.jpg](img/img.jpg)
