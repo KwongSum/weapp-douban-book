@@ -13,4 +13,4 @@
 这个Demo纯属为新手练习
 https://github.com/DriverUI/weapp-douban-book
 
-[img/preview.gif](img/preview.gif)
+![img/preview.gif](img/preview.gif)
